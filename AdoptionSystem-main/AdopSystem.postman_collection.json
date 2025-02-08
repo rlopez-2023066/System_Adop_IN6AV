@@ -1,0 +1,474 @@
+{
+	"info": {
+		"_postman_id": "2072a99b-2cde-4ec9-ad5a-9ec0ba30e220",
+		"name": "AdopSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956967"
+	},
+	"item": [
+		{
+			"name": "Animal",
+			"item": [
+				{
+					"name": "addAnimal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzZjNzRiZjQyZWYxODgyY2Y1NjkiLCJ1c2VybmFtZSI6ImRyZXRhbmEiLCJuYW1lIjoiRHJpdmxpbiIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5ODQ1NzQsImV4cCI6MTczODk5NTM3NH0.auZU9S9ROPSOEnJYJUGEXus4k5347czi_6npdAXswog",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Junior",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Raza Mediana",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Raza Snauzer",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a6cbe4a5f68448f4a2334b",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/animal/",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"animal",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listAnimal",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzZjNzRiZjQyZWYxODgyY2Y1NjkiLCJ1c2VybmFtZSI6ImRyZXRhbmEiLCJuYW1lIjoiRHJpdmxpbiIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5ODQ1NzQsImV4cCI6MTczODk5NTM3NH0.auZU9S9ROPSOEnJYJUGEXus4k5347czi_6npdAXswog",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/animal/",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"animal",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findIdAnimal",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzZjNzRiZjQyZWYxODgyY2Y1NjkiLCJ1c2VybmFtZSI6ImRyZXRhbmEiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTgzMzk4LCJleHAiOjE3Mzg5OTQxOTh9.DLwW3F9-MHSX8hM5lfnSDrcvDLNqgcVFlHYT5GOKbXk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/animal/67a57089d4ba62627a275b60",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"animal",
+								"67a57089d4ba62627a275b60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAnimal",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzZjNzRiZjQyZWYxODgyY2Y1NjkiLCJ1c2VybmFtZSI6ImRyZXRhbmEiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTgzMzk4LCJleHAiOjE3Mzg5OTQxOTh9.DLwW3F9-MHSX8hM5lfnSDrcvDLNqgcVFlHYT5GOKbXk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Gio",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Perro Miniatura",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Raza Chihuahua",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a6c6c74bf42ef1882cf569",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/animal/67a57089d4ba62627a275b60",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"animal",
+								"67a57089d4ba62627a275b60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAnimal",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzZjNzRiZjQyZWYxODgyY2Y1NjkiLCJ1c2VybmFtZSI6ImRyZXRhbmEiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTgzMzk4LCJleHAiOjE3Mzg5OTQxOTh9.DLwW3F9-MHSX8hM5lfnSDrcvDLNqgcVFlHYT5GOKbXk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:2636/animal/67a57089d4ba62627a275b60",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"animal",
+								"67a57089d4ba62627a275b60"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "getUserList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzZjNzRiZjQyZWYxODgyY2Y1NjkiLCJ1c2VybmFtZSI6ImRyZXRhbmEiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTgzMTcyLCJleHAiOjE3Mzg5OTM5NzJ9.sKWKAWcdvIuC1659H2ePLFiSsf93xp2c0Ux35nw0hwU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/v1/user/67a431b95c4c4bb21c308f13",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								"67a431b95c4c4bb21c308f13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzZjNzRiZjQyZWYxODgyY2Y1NjkiLCJ1c2VybmFtZSI6ImRyZXRhbmEiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTgzMzk4LCJleHAiOjE3Mzg5OTQxOTh9.DLwW3F9-MHSX8hM5lfnSDrcvDLNqgcVFlHYT5GOKbXk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userLogin",
+									"value": "jestrada",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Estra123@12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/Login",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Jose",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Estrada",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "jestrada",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jestrada@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Estrada123@",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/Alfredo Lopez/Downloads/JUEGOS-BIOLOGIA RL.jpg"
+								},
+								{
+									"key": "phone",
+									"value": "66320012",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/register",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzZjNzRiZjQyZWYxODgyY2Y1NjkiLCJ1c2VybmFtZSI6ImRyZXRhbmEiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTgzMzk4LCJleHAiOjE3Mzg5OTQxOTh9.DLwW3F9-MHSX8hM5lfnSDrcvDLNqgcVFlHYT5GOKbXk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Alfredo Rene",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "rlopez-2023066@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/user/67a431b95c4c4bb21c308f13",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								"67a431b95c4c4bb21c308f13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePass",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzZjNzRiZjQyZWYxODgyY2Y1NjkiLCJ1c2VybmFtZSI6ImRyZXRhbmEiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTgzMzk4LCJleHAiOjE3Mzg5OTQxOTh9.DLwW3F9-MHSX8hM5lfnSDrcvDLNqgcVFlHYT5GOKbXk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "oldPassword",
+									"value": "Estra123@",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "Estra123@12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/user/updatePass/67a6d4feabf6de8905906fc9",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								"updatePass",
+								"67a6d4feabf6de8905906fc9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "addAppointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Chequeo Mensual",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Seguimiento de su tratamiento",
+									"type": "text"
+								},
+								{
+									"key": "appointment",
+									"value": "2022-12-02",
+									"type": "text"
+								},
+								{
+									"key": "pet",
+									"value": "67a6cc8fa5f68448f4a23350",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Earring",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a6cbe4a5f68448f4a2334b",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/add/appointment",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"add",
+								"appointment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
