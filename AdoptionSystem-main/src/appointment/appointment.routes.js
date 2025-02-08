@@ -5,6 +5,6 @@ import { saveAppointment } from "./appointment.controller.js"
 
 const api = Router()
 
-api.post('/add/appointment' ,saveAppointment)
+api.post('/add/appointment' ,validateJwt ,saveAppointment)
 
 export default api
